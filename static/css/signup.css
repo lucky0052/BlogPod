@@ -1,0 +1,174 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.tag-title{
+    display:block;
+}
+
+ol > li{
+    list-style-type:none;
+    float:left;
+}
+
+input:not([type="checkbox"]){
+    width:100%;
+    padding:4px;
+    margin:4px 0;
+
+}
+
+.tag-title{
+    font-size:22px;
+    font-weight:500;
+    color:#202124;
+}
+
+ol > li:not(:nth-child(1)){
+    margin-left:25px;
+}
+
+
+
+.form-container{
+    box-shadow:2px 2px 20px 0 rgba(0,0,0,0.18);
+    width:1000px;
+    margin:auto;
+    margin-top:150px;
+    
+       
+}
+
+
+
+.is-flex{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+
+.form-section{
+    
+    align-self:center;
+    /* background-color:red; */
+    padding:10px;
+    width:250px;
+    margin-left:30px;
+    padding:4px; 
+    box-sizing:border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+form{
+    margin-top:50px;
+}
+
+
+input,label,.tag-title{
+    font-family: "Google Sans","Roboto",Arial,Helvetica,sans-serif;
+}
+
+
+input:not([type="submit"]) {
+    box-sizing:border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-radius:4px;
+    border:1px solid rgb(218,220,221);
+    padding:5px;
+    
+}
+
+input[type="checkbox"]{
+    margin-top:10px;
+}
+
+
+
+input[type="submit"]{
+    margin-top:20px;
+    padding:8px 5px;
+    text-transform:capitalize;
+    font-size:14px;
+    border:none;
+    background-color:#f64c72;
+    color:white;
+    box-shadow:0 2px 10px -2px #f64c72;
+    transition: transform 400ms ease-in 100ms;
+}
+
+input[type="submit"]:active{
+    transform:translateY(-20%);
+    box-shadow:0 0 30px -10px #f64c72;
+
+}
+
+
+.content-section{
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    position:relative;
+    margin:0;
+    display:none;
+}
+
+.content-img{
+    width:680px;
+    height:auto;
+    opacity:0.20;
+    color:#202124;
+    
+}
+
+.main-title{
+    position:absolute;
+    font-family: 'Poppins', sans-serif;
+    top:30%;
+    left:10%;
+    
+    font-weight:400;
+    color:#f64c72;
+    /* font-family: 'Fira Sans', sans-serif; */
+}
+
+.main-title > h1{
+    width:350px;
+    line-height:1;
+    font-size:32px;
+    opacity:1;
+    
+}
+
+
+section[class="content-section"]{
+    margin:0;
+}
+
+
+@media all and (min-width:615px){
+    .content-section{
+        display:block;
+    }
+
+    .content-img{
+        max-width:100%;
+        height:100%;
+        flex-shrink:10;
+        
+    }
+
+    .form-section{
+        min-width:250px;
+    }
+
+}
+
+@media all and (max-width:615px){
+    .form-container{
+        justify-content:center;
+     }
+}

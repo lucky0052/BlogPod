@@ -1,0 +1,22 @@
+div {
+    /* background-image:url('../image/code.png'); */
+    /* background-position:right bottom;
+    background-position:repeat; */
+    /* padding:15px; */
+    /* border:10px dotted black;
+    padding:35px;
+    background-color:yellow;
+    background-clip:padding-box; */
+}
+/* div{
+    border:10px dotted red;
+    padding:35px;
+    background-color:yellow;
+    /* background-clip:padding-box; */
+    /* box-sizing: border-box;
+} */ 
+h1{
+    font-size:50px;
+    font-weight:bold;
+    background:linear-gradient(to bottom, rgb(255,0,0,0),rgb(255,0,0,1));
+}

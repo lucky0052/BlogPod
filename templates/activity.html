@@ -1,0 +1,15 @@
+{% extends 'practice.html' %}
+{% block head %}
+    Activity
+{% endblock %}
+{% block content %}
+<div class="content grid-item2">
+    <h1>We Monitor Your Activity</h1>
+    {% for i in Activity %}
+    <p class="info-bar">{{i.time}}</p>
+    <p class="info-bar">{{i.title}}</p>
+    <p class="info-bar">{{i.delete}}</p>
+    <p class="info-bar">{{i.create}}</p>
+    {% endfor %}
+</div>
+{% endblock %}

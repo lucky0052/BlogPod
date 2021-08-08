@@ -1,0 +1,39 @@
+{% extends 'practice.html' %}
+{% block content %}
+<div class="content grid-item2">
+    <h1 class="title">Blog</h1>
+    <div class="is-flex1">
+        
+            {% for blog in blogs %}
+            <div class="is-popup">
+                <h3 >{{ blog.title }}</h3>
+                <hr>
+                <h6> {{ blog.content }}</h6>
+            </div>
+            <div class="blog-section1">   
+                <div class="main-card1">
+                    <h6 class="side-img" >Content: {{ blog.content }}</h6>
+                    <!-- <img src="../static/wel.png" alt="" class="side-img"> -->
+                    <!-- <img src="https://img.icons8.com/fluent/96/000000/blog.png" class="side-img" /> -->
+               
+                
+                <div class="is-right">
+                    <h3 class=" is-font-sm" >{{ blog.title }}</h3>
+                    <h4 class="mt-10"> {{ blog.user }} {{ blog.date }}</h4>
+                    <h6 class="mt-10 is-pos-abs">Likes: {{ blog.likes }} &nbsp; <span class="bg-info mg-0 is-font-md">{{blog.genre}}</span>  </h6>
+                </div>
+                
+               
+                
+                
+                <!-- <h6>Share: {{ blog.link }}</h6> -->
+                </div>             
+                
+            </div>
+        {% endfor %}
+        
+    </div>
+    
+</div>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'practice.html' %}
+{% block head %}
+    Upload
+{% endblock %}
+{% block content %}
+<div class="content grid-item2">
+    <div class="round-head">
+        <div class="btn-link">
+            <button onclick="content(event,'podcast')" class="buttons podcast">Podcast</button>
+            <button onclick="content(event,'blog')" class="buttons blog">Blogs</button>
+        </div>
+    </div>
+    <div class="tab-content podcast">
+        <h1>Podcast Content</h1>
+    </div>
+    <div class="tab-content blog">
+        <h1>Blogs Content</h1>
+    </div>
+ </div>
+{% endblock %}

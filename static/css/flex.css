@@ -1,0 +1,40 @@
+.flex-container{
+    display:flex;
+    background:red;
+    flex-flow:row wrap;
+    justify-content:space-around ;
+    align-items:stretch;
+    align-content:space-between;
+
+    
+}
+.items{
+    background:white;
+    width:150px;
+    font-size:40px;
+    /* text-align:center; */
+    margin:10px; 
+}
+/* .items:nth-child(odd){
+    flex-grow: 5;
+} */
+
+img{
+    width:120px;
+    height:120px;
+    border:10px soild black;
+    padding:10px;
+}
+
+@media (max-width:500px){
+    .flex-container{
+        flex-flow:column;
+    }
+    img{
+        width:300px;
+        height:300px;
+    }
+}
+*{
+    box-sizing: border-box;
+}

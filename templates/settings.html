@@ -1,0 +1,57 @@
+{% extends 'practice.html' %}
+{% block head %}
+    Information
+{% endblock %}
+<div class="containers1"></div>
+{% block grid %}
+    <div class="sflex-container">
+    <div class="sitems1">
+        <a href="{{url_for('setting')}}">Account</a>
+        <a href="{{url_for('describe')}}">Describe Yourself</a>
+    </div>
+    <div class="sitems2">
+        {% block item2 %}
+        <p id="heading-1">Account Settings</p>
+        <div class="section1">
+        <form>
+            <label for="cname">Full name</label>
+            <input type="text" name="name" id="cname" required>
+            <input type="submit" value="change name">
+        </form>
+        </div>
+        <div class="section2">
+            <p>Change Password</p>
+            <form>
+                <label for="cpassword">Current Password</label>
+                <input class="inputs" type="password" name="cpassword" id="cpassword" >
+                <label for="npassword">New password</label>
+                <input class="inputs" type="password" id="npassword" >
+                <label for="rpassword">Repeat Password</label>
+                <input class="inputs" type="password" id="npassword" >
+                <input type="submit" value="change password">
+            </form>
+        </div>
+        <div class="section3">
+            <p>Social Account</p>
+            <label for="fbid">facebook Id</label>
+            <input type="text" name="url" id="fbid" placeholder="url">
+        </div>
+        
+        <div class="section4">
+            <p>Delete Account</p>
+        <article>Hii Username<br><main>
+            <strong>Note:&nbsp;</strong>This is to inform 
+                  you about the account deletion.
+                  Once you delete the account you may 
+                  lost your personal information, your media or may lost 
+                  the chance to be a top user. 
+        </article>
+        </main>
+        <form>
+            <input id="delete" type="submit" value="Delete Account">
+        </form>
+        </div>
+        {% endblock %}
+    </div>
+    </div>
+{% endblock %}

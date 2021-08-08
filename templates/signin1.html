@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BlogPod: Sign in </title>
+        <link rel="stylesheet" href="../static/signin1.css">
+        <link rel="icon" href="../static/group1.png" size="32*32">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="container1">
+        <img id = "logo" src="../static/group1.png" alt="logo"> 
+    </div>
+        <p class="title">Connect with <span>BlogPod</span></p>
+    <div class="container">
+        <form action="" autocomplete="off">
+            <input class="bottom" type="text" placeholder="Name" Required autofocus>
+            <input class="bottom" type="password" placeholder="Password" Required>
+            <a id="one-link" href="#" alt="_blank">Forgot Password?</a>
+            <input type="submit" value="Get Access">
+        </form>
+    </div>
+    
+    
+    <p>
+        New User?<a href="{{url_for('signup')}}">Create an Account</a>
+    </p>
+    <!-- <img id="bottom-img" src="../image/bottom.png" alt="Background"> -->
+
+    
+</body>
+
+</html>

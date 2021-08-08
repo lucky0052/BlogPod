@@ -1,0 +1,49 @@
+/* body{
+    background-color:tomato;
+} */
+#name{
+    color:hotpink;
+    font-size:50px;
+    font-weight:20px;
+    border-bottom:10px dotted purple;
+}
+#profession{
+    color:grey;
+    margin:10px 0px;
+}
+article > h2{
+    color:darkgrey;
+    font-family:arial;
+}
+i{
+    font-size:40px;
+    font-family: italic;
+    font-weight:bold;
+}
+ul{
+    background:rgb(243, 214, 243);
+    border:3px solid purple;
+    font-size:20px;
+    font-weight:bold;
+}
+li{
+    padding:10px;
+}
+#email{
+    color:green;
+}
+#web{
+    color:orangered;
+}
+h3[id="first"]{
+    color:red;
+}
+h3[class~="special"]{
+    color:green;
+}
+article p:first-child::first-line{
+    color:red;
+}
+h4::before{
+    content: "Hii There";
+}

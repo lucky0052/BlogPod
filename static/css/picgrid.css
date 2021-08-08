@@ -1,0 +1,28 @@
+img{
+    width:100%;
+    height:100%;
+}
+.pic-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    grid-auto-rows: 75px;
+    grid-gap:5px;
+    grid-auto-flow: dense;
+    /* justify-content:stretch; */
+}
+.pic-container {
+    padding:25px;
+}
+.vertical{
+    grid-row:span 2;
+}
+.horizontal{
+    grid-column: span 2 ;
+}
+.big{
+    grid-row:span 3;
+    grid-column:span 3;
+}
+.pic-container > div:hover{
+    box-shadow:0px 4px 8px 0px red; 
+}

@@ -1,0 +1,14 @@
+{% extends 'logo.html' %}
+{% block content %}
+<h1 id="faq">FAQ Page</h1>
+<div class="box-container">
+    {% for detail in details %}
+    <div class="main-container">
+        <p id="que">{{detail.que}}</p>
+    </div>
+    <div class="content-section">
+        <p>{{detail.content}}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

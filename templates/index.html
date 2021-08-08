@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BlogPod: Sign up</title>
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script src="https://kit.fontawesome.com/137954d1cc.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+        <link rel="icon" href="../image/Slice.png" size="32*32">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="item1">
+                <h1 id="title1"><img src="../static/group1.png">BlogPod</h1>
+            </div>
+            <div class="item2">
+                <div class="details">
+                    <h3>Connect with <span id="color-title">BlogPod</span></h3>
+                    <p>Already have an Account?<a href="{{url_for('signin')}}">Sign in</a></p>
+                    <form autocomplete="off">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" required>
+                        <label for="email">Email</label>
+                        <!-- <span class="iconify" data-icon="mdi:email" data-inline="false"></span> -->
+                        <input id="email" type="email" >
+                        <label for="otp">OTP</label>
+                        <!-- <span class="iconify" data-icon="mdi:security" data-inline="false"></span> -->
+                        <input id="otp" type="text">
+                        <label for="password">Password</label>
+                        <!-- <span class="iconify" data-icon="mdi:form-textbox-password" data-inline="false"></span> -->
+                        <input id="password" type="password" >
+                        <!-- <input id="click" type="submit" value="Become a Member" > -->
+                        <button id="click" type="submit">Become a Member<i class="ri-login-circle-line"></i></button>
+                    </form> 
+                    <h1 id="title">Or Connect With</h1>  
+                    <div class="links">
+                        <!-- <div class="br1 one">
+                            
+                        </div> -->
+                        <i class="ri-google-line"></i>
+                        <!-- <div class="br2 one">
+                            
+                        </div> -->
+                        <i class="ri-facebook-circle-line"></i>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <!-- <div class="item3">
+                <h1>BoX3</h1>
+            </div> -->
+        </div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+h1{
+    color:rgb(120, 82, 49,0.4);
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+h1:hover{
+    color:blue;
+    
+}
+/*li:nth-child(odd){
+    color:red;
+}*/
+li:first-child{
+    color:red;
+}
+
+h1 + a{
+    text-decoration:none;
+} 
+a:hover{
+    color:green;
+}
+h2 p{
+    font-size:80px;
+}
+h2 + p{
+    color:tomato;
+}
+#image{
+
+    width:40%;
+    height:200px;
+    background:linear-gradient(to right,red,green,blue,orange);
+    background-size: cover;
+}

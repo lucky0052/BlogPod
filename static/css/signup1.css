@@ -1,0 +1,91 @@
+body{
+    background-image:url('../image/picone.jpg');
+    /* background:blue; */
+    background-size:cover;
+}
+.flex-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    
+}
+#img1{
+    width:30px;
+    height:30px;
+}
+.f1{
+    margin-top:auto;
+    margin-bottom:auto;
+    /* display:inline-block; */
+    /* background-color:yellow; */
+}
+.f2{
+    background-color:white;
+    width:450px;
+    height:650px;
+    margin-top:20px;
+}
+.form-data >h1{
+    /* background-color:rgb(80, 4, 4); */
+    font-family:Gilroy-SemiBold,"PingFang SC","Microsoft YaHei",sans-serif,Arial;
+    font-weight:600;
+    font-size:35px;
+}
+input{
+    display:block;
+    width:250px;
+    padding:10px;
+    margin-top:10px;
+}
+form{
+    /* margin-left:20px; */
+    padding-left:30px;
+    border-bottom:1px solid lightgrey;
+    /* margin-top:400px; */
+    /* background-color:red; */
+}
+div > h1{
+    margin-top:40px;
+}
+label {
+    margin-top:10px;
+    /* background-color:blue; */
+    display:block;
+    /* width:250px; */
+}
+input[type="submit"]{
+    border:none;
+    outline:none;
+    background-color:rgb(34, 204, 51);
+    border-radius:5px;
+    padding:10px;
+    color:white;
+    font-weight:700;
+    margin-bottom:5px;
+}
+/* i{
+    font-size:40px;
+    text-align:center;
+} */
+.api-details {
+    font-size:40px;
+    text-align:center;
+}
+i{
+    margin-left:8px;
+}
+@media only screen and (max-width:900px){
+    .flex-container{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-content: center;
+        align-items:center;
+    }
+    /* .f1{
+        margin-top:50px;
+    } */
+}
+input:focus{
+    outline:none;
+}
