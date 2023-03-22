@@ -186,9 +186,6 @@ def userpodcast(name):
     return render_template('userpage.html', title=f"{name}")
 
 
-@app.context_processor
-def override_url_for():
-    return dict(url_for=dated_url_for)
 
 
 
