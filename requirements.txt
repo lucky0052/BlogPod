@@ -17,7 +17,7 @@ Brlapi==0.8.3
 cachetools==5.3.0
 certifi==2020.6.20
 cffi==1.15.1
-chardet==4.0.0
+chardet==3.0.4
 click==8.0.3
 colorama==0.4.4
 comm==0.1.2
@@ -52,7 +52,7 @@ gitdb==4.0.10
 GitPython==3.1.31
 httplib2==0.20.2
 hyperlink==21.0.0
-idna==3.4
+idna==2.6
 importlib-metadata==4.6.4
 incremental==21.3.0
 ipykernel==6.21.1
@@ -157,7 +157,7 @@ qtconsole==5.4.0
 QtPy==2.3.0
 rencode==1.0.6
 reportlab==3.6.8
-requests==2.25.1
+requests==2.18.4
 requests-toolbelt==0.9.1
 rfc3339-validator==0.1.4
 rfc3986-validator==0.1.1
@@ -195,7 +195,7 @@ ubuntu-drivers-common==0.0.0
 ufw==0.36.1
 unattended-upgrades==0.1
 uri-template==1.2.0
-urllib3==1.26.5
+urllib3==1.22
 usb-creator==0.3.7
 validators==0.20.0
 virtualenv==20.21.0
